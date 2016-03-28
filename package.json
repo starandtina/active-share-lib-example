@@ -1,0 +1,15 @@
+{
+  "name": "active-share-lib-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --files '**/*' --server"
+  },
+  "keywords": [],
+  "author": "Khalil Zhang <kandmforever@126.com> (http://starandtina.github.io/)",
+  "license": "MIT",
+  "dependencies": {
+    "active-share-lib": "1.0.0"
+  }
+}
