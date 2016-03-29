@@ -1,8 +1,8 @@
 require([
-  'ActiveShareLib', 'backbone', 'jquery', 'underscore'
-], function (ActiveShareLib, Backbone, $, _) {
-  var BackboneBaseView = ActiveShareLib.BackboneBaseView;
-  var Reflux = ActiveShareLib.Reflux;
+  'ActiveShareLib', 'backbone', 'jquery', 'underscore', 'BackboneBaseView', 'Reflux'
+], function (ActiveShareLib, Backbone, $, _, BackboneBaseView, Reflux) {
+  // var BackboneBaseView = ActiveShareLib.BackboneBaseView;
+  // var Reflux = ActiveShareLib.Reflux;
   var Model = Reflux.Model;
   var createStore = Reflux.createStore;
 
