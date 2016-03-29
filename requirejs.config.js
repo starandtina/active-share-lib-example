@@ -12,18 +12,5 @@ var require = {
   },
   deps: ['ActiveShareLib', 'backbone', 'jquery', 'underscore'],
   callback: function (ActiveShareLib, Backbone, $, _) {
-    var BackboneBaseView = ActiveShareLib.BackboneBaseView;
-
-    var View = BackboneBaseView.extend({
-      render: function () {
-        this.$el.html('<h1>I\'m using ActiveShareLib.BackboneBaseView</h1>');
-
-        return this;
-      }
-    });
-
-    new View({
-      el: $('#app')
-    }).render();
   }
 };
