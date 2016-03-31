@@ -1,6 +1,7 @@
 require([
-  'ActiveShareLib', 'backbone', 'jquery', 'underscore', 'BackboneBaseView', 'Reflux'
-], function (ActiveShareLib, Backbone, $, _, BackboneBaseView, Reflux) {
+  'ActiveShareLib', 'backbone', 'jquery', 'underscore', 'BackboneBaseView', 'Reflux', 'async-render'
+], function (ActiveShareLib, Backbone, $, _, BackboneBaseView, Reflux, render) {
+  render();
   // var BackboneBaseView = ActiveShareLib.BackboneBaseView;
   // var Reflux = ActiveShareLib.Reflux;
   var Model = Reflux.Model;

@@ -6,7 +6,8 @@ var require = {
     backbone: './bower_components/backbone/backbone',
     BackboneBaseView: './node_modules/active-share-lib/dist/BackboneBaseView',
     Reflux: './node_modules/active-share-lib/dist/Reflux',
-    ActiveShareLib: './node_modules/active-share-lib/dist/ActiveShareLib'
+    ActiveShareLib: './node_modules/active-share-lib/dist/ActiveShareLib',
+    'async-render': './node_modules/active-share-lib/dist/async-render'
   },
   shim: {
     BackboneBaseView: ['backbone'],
@@ -15,6 +16,5 @@ var require = {
     backbone: ['jquery', 'underscore']
   },
   deps: ['ActiveShareLib', 'backbone', 'jquery', 'underscore'],
-  callback: function (ActiveShareLib, Backbone, $, _) {
-  }
+  callback: function (ActiveShareLib, Backbone, $, _) {}
 };
