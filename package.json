@@ -11,5 +11,8 @@
   "license": "MIT",
   "dependencies": {
     "active-share-lib": "1.0.0"
+  },
+  "devDependencies": {
+    "html-wrapper": "^1.0.0"
   }
 }
