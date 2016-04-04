@@ -14,8 +14,7 @@ var require = {
     BackboneBaseView: ['backbone'],
     Reflux: ['backbone', 'underscore'],
     ActiveShareLib: ['jquery', 'underscore', 'backbone'],
-    backbone: ['jquery', 'underscore']
-  },
-  deps: ['ActiveShareLib', 'backbone', 'jquery', 'underscore'],
-  callback: function (ActiveShareLib, Backbone, $, _) {}
+    backbone: ['jquery', 'underscore'],
+    'async-render': ['jquery']
+  }
 };
