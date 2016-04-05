@@ -3,6 +3,8 @@ if (typeof define !== 'function') {
 }
 
 define(function (require, exports, module) {
+  const $ = require('jquery');
+
   function GlobalHeader() {
     this.initialize = function (context) {
       // var components = context.getComponents()
@@ -10,8 +12,13 @@ define(function (require, exports, module) {
   }
 
   GlobalHeader.render = function (event) {
-    var $html = event.get$Html();
-    $html.append('<h1>GlobalHeader loaded</h1>');
+    const $html = event.get$Html();
+    const $button = $(`<div class='global-header__button' data-render='component/Button'></div>`);
+
+    $html.append(`<h1>GlobalHeader loaded</h1>`);
+    $html.append($button);
+
+    event.addToRenderQueue($button);
   }
 
   module.exports = GlobalHeader;
